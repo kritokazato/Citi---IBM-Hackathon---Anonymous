@@ -1,0 +1,3 @@
+ - name: iot_data
+   random-route: true
+   memory: 128M

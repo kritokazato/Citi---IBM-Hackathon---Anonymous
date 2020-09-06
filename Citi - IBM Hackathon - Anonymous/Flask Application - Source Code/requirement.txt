@@ -1,0 +1,4 @@
+Flask==1.1.2
+ibm-watson-machine-learning==1.0.10
+sqlalchemy
+psycopg2
