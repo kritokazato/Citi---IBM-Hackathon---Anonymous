@@ -1,7 +1,7 @@
 import json
 
 def apicall_personal_loan(id):
-    api_key = 'TQPDo_OY4aY8q1ObQvD61EbdfmTmT_Ykt2tFukflU3uV'
+    api_key = 'teuonH42NK9fs-h2kbKROGBHhiirxc6tFhyXQ7eIOcgg'
     location = 'us-south'
 
     wml_credentials = {
@@ -13,11 +13,11 @@ def apicall_personal_loan(id):
 
     client = APIClient(wml_credentials)
 
-    space_id = '5594f595-ad05-400a-b370-d9d789f6d82e'
+    space_id = 'f6f6501f-c8e1-4c4f-9c65-59ecafdcc386'
     client.set.default_space(space_id)
-    client.deployments.get_details('d8f0e83a-0f90-4afb-9022-14b6d7922191')
-    deployment_uid = 'd8f0e83a-0f90-4afb-9022-14b6d7922191'
-    scoring_endpoint = 'https://us-south.ml.cloud.ibm.com/ml/v4/deployments/d8f0e83a-0f90-4afb-9022-14b6d7922191/predictions'
+    #client.deployments.get_details('85280b66-0f77-40a5-b420-a2ac53ea18d0')
+    deployment_uid = '85280b66-0f77-40a5-b420-a2ac53ea18d0'
+    #scoring_endpoint = 'https://us-south.ml.cloud.ibm.com/ml/v4/deployments/d8f0e83a-0f90-4afb-9022-14b6d7922191/predictions'
 
     scoring_payload = {"input_data": [{"fields": ["age", "job_cat", "marital status_cat", "education_cat",
                                                   "credit default_cat", "housing loan_cat", "Vehicle loan_cat"],
@@ -53,10 +53,12 @@ def apicall_personal_loan(id):
     lst.append(pri)
     return lst
 
-#print(apicall_personal_loan([33, 9, 1, 2, 0, 3, 2]))
 
+
+#print(apicall_personal_loan([33, 9, 1, 2, 0, 3, 2]))
+#['Yes', 1.0]
 def apicall_vehicle_loan(id):
-    api_key = 'TQPDo_OY4aY8q1ObQvD61EbdfmTmT_Ykt2tFukflU3uV'
+    api_key = 'teuonH42NK9fs-h2kbKROGBHhiirxc6tFhyXQ7eIOcgg'
     location = 'us-south'
 
     wml_credentials = {
@@ -68,10 +70,10 @@ def apicall_vehicle_loan(id):
 
     client = APIClient(wml_credentials)
 
-    space_id = '5594f595-ad05-400a-b370-d9d789f6d82e'
+    space_id = 'f6f6501f-c8e1-4c4f-9c65-59ecafdcc386'
     client.set.default_space(space_id)
     #client.deployments.get_details('d8f0e83a-0f90-4afb-9022-14b6d7922191')
-    deployment_uid = '4de29f68-d30f-4f01-945d-c5483e88ec8a'
+    deployment_uid = 'b85fc3cb-4824-491b-baa3-88f981ba26ba'
     #scoring_endpoint = 'https://private.us-south.ml.cloud.ibm.com/ml/v4/deployments/4de29f68-d30f-4f01-945d-c5483e88ec8a/predictions'
 
     scoring_payload = { "input_data": [{"fields": ["Loan_ID","Gender","Married","Dependents", "Education","Self_Employed","ApplicantIncome","CoapplicantIncome","LoanAmount","Loan_Amount_Term","Credit_History","Property_Area"], "values": [id]}]}
@@ -108,7 +110,7 @@ def apicall_vehicle_loan(id):
 #print(apicall_vehicle_loan([1,"Male","Yes",1,"Graduate","No",4583,1508,128,360,1,"Rural"]))
 
 def apicall_credit_card(id):
-    api_key = 'TQPDo_OY4aY8q1ObQvD61EbdfmTmT_Ykt2tFukflU3uV'
+    api_key = 'teuonH42NK9fs-h2kbKROGBHhiirxc6tFhyXQ7eIOcgg'
     location = 'us-south'
 
     wml_credentials = {
@@ -120,10 +122,10 @@ def apicall_credit_card(id):
 
     client = APIClient(wml_credentials)
 
-    space_id = '5594f595-ad05-400a-b370-d9d789f6d82e'
+    space_id = 'f6f6501f-c8e1-4c4f-9c65-59ecafdcc386'
     client.set.default_space(space_id)
     #client.deployments.get_details('d8f0e83a-0f90-4afb-9022-14b6d7922191')
-    deployment_uid = '07425dc8-f48b-4943-ab26-2108b8c18ad1'
+    deployment_uid = '146ca1b7-ce2f-4a5a-b146-53d1de0c92a6'
     #scoring_endpoint = 'https://private.us-south.ml.cloud.ibm.com/ml/v4/deployments/4de29f68-d30f-4f01-945d-c5483e88ec8a/predictions'
 
     scoring_payload = { "input_data": [{"fields": ["age", "job","marital status","education","credit default?"], "values": [id]}]}
@@ -159,7 +161,7 @@ def apicall_credit_card(id):
 #print(apicall_credit_card([25,"services","single","secondary","no"]))
 
 def apicall_housing_loan(id):
-    api_key = 'TQPDo_OY4aY8q1ObQvD61EbdfmTmT_Ykt2tFukflU3uV'
+    api_key = 'teuonH42NK9fs-h2kbKROGBHhiirxc6tFhyXQ7eIOcgg'
     location = 'us-south'
 
     wml_credentials = {
@@ -171,10 +173,10 @@ def apicall_housing_loan(id):
 
     client = APIClient(wml_credentials)
 
-    space_id = '5594f595-ad05-400a-b370-d9d789f6d82e'
+    space_id = 'f6f6501f-c8e1-4c4f-9c65-59ecafdcc386'
     client.set.default_space(space_id)
     #client.deployments.get_details('d8f0e83a-0f90-4afb-9022-14b6d7922191')
-    deployment_uid = '69500c98-cc28-4c75-8aab-4dd35684a2d5'
+    deployment_uid = '44695a6b-6153-454e-ae58-f26c19fb9b95'
     #scoring_endpoint = 'https://private.us-south.ml.cloud.ibm.com/ml/v4/deployments/4de29f68-d30f-4f01-945d-c5483e88ec8a/predictions'
 
     scoring_payload = { "input_data": [{"fields": ["age", "job","marital status","education","credit default?"], "values": [id]}]}
@@ -208,6 +210,6 @@ def apicall_housing_loan(id):
 
     return lst
 
-#a=apicall_housing_loan([25,"services","single","secondary","no"])
+#print(apicall_housing_loan([25,"services","single","secondary","no"]))
 #print(a)
 #print (int(float(a[1])*100))

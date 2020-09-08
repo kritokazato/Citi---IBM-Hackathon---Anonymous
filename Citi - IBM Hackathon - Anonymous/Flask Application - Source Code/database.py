@@ -1,6 +1,6 @@
-#import psycopg2
+import psycopg2
 from sqlalchemy import create_engine
-#from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker
 from sqlalchemy import select, Table , MetaData, text
 
 metadata = MetaData()
@@ -15,6 +15,9 @@ def getCustomerDetails(id):
     stmt=stmt.where(loans.columns.loan_id == id)
     results = connection.execute(stmt).fetchall()
     #print(results)
+    #[(1,2,3)]
+    #[1,2,3]
+
     lst = []
     for row in results:
         for i in range(len(row)):
