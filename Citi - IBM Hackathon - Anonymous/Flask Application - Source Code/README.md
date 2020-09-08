@@ -1,4 +1,4 @@
-# STEPS TO Execute the Flask Appication
+# STEPS TO Execute the Flask Application
 
 1) Clone the Code to the local 
 2) Import all the required libraried in requirement.tt
