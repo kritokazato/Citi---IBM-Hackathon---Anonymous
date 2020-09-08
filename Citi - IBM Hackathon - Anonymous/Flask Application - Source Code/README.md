@@ -6,7 +6,7 @@
 Open http://localhost:5000
 web application is ready to use, Use Customer ID : 1 in search bar to make prediction
 
-# What Happend Whenter Hit searh :
+# Behind the Scenes (after Search hit)
 
 1) databas.py file is called and for the  entered id. It fetches the records from  Elephantsqlnstance (POstGres as Service) and returns as list
 2) The list is passed to Apicall.py to hit the model deployed in Watson machine Learning Studio and get the predictions.
