@@ -6,7 +6,7 @@ from sqlalchemy import select, Table , MetaData, text
 metadata = MetaData()
 
 def getCustomerDetails(id):
-    DATABASE_URI = 'postgres+psycopg2://mlwqkqui:snbVGjtG2F_Oa5FY476S7WTllbx--Lr2@echo.db.elephantsql.com:5432/mlwqkqui'
+    DATABASE_URI = 'postgres+psycopg2://ajhcdixf:G4xwnWJNz3q1LO_D7vifi3fJLW-5Rr9H@john.db.elephantsql.com:5432/ajhcdixf'
     engine=create_engine(DATABASE_URI)
     #print(engine.table_names())
     connection=engine.connect()
